@@ -19,16 +19,18 @@
     <h1 class="title">Espectro Político</h1>
     <hr>
 
-    <h2 style="text-align:center;" id="question-number">All done!</h2>
-    <p class="question" id="question-text">Did you complete this test in a serious (or at least unironic) manner?</p>
+    <h2 style="text-align:center;" id="question-number">Tudo pronto!</h2>
+    <p class="question" id="question-text">Você concluiu este teste de maneira séria (ou pelo menos não irônica)?</p>
     <div id="answers">
-        <button class="button" id="serious_extra" onclick="init_question()" style="background-color: #1b5e20;">Yes, and I'd like to (anonymously) help with ideology assignment!</button> <br>
-        <button class="button" id="serious" onclick="pass(true)" style="background-color: #4caf50;">Yes, but get me to the results!</button> <br>
-        <button class="button" onclick="pass(false)">Nah, just get me to the results!</button> <br>
-        <button class="button" id="quiz" onclick="location.href='quiz.html';" style="background-color: #4caf50; display: none;">Do the quiz!</button> <br>
+        <button class="button" id="serious_extra" onclick="init_question()" style="background-color: #1b5e20;">Sim, e eu
+            gostaria de (anonimamente) ajudar na tarefa ideológica!</button> <br>
+        <button class="button" id="serious" onclick="pass(true)" style="background-color: #4caf50;">Sim, mas me leve aos
+            resultados!</button> <br>
+        <button class="button" onclick="pass(false)">Não, apenas me leve aos resultados!</button> <br>
+        <button class="button" id="quiz" onclick="location.href='quiz.html';" style="background-color: #4caf50; display: none;">Faça o questionário!</button> <br>
     </div>
-    <button class="small_button" onclick="prev_question()" id="back_button" style="display: none;">Back</button>
-    <button class="small_button_off" id="back_button_off" style="display: none;">Back</button><br>
+    <button class="small_button" onclick="prev_question()" id="back_button" style="display: none;">Voltar</button>
+    <button class="small_button_off" id="back_button_off" style="display: none;">Voltar</button><br>
 
     <!-- Test JS -->
     <script>
@@ -109,7 +111,7 @@
                 }
                 $("<br>").insertAfter("#select");
 
-                var btn = $(`<button class="button" id="go" onclick="next_question(getActiveDropdown());" style="background-color:#4caf50; display: none;">Go!</button> <br>`);
+                var btn = $(`<button class="button" id="go" onclick="next_question(getActiveDropdown());" style="background-color:#4caf50; display: none;">Ir!</button> <br>`);
                 $("#answers").append(btn);
                 createButton({
                     "label": "Refuse",
@@ -123,7 +125,7 @@
             } else if (current.questionType === "customNumber") {
                 $("#answers").append($(`<input type="tel" id="number" class="num_input" maxlength="${current.range[1].toString().length}" min="${current.range[0]}" max="${current.range[1]}"> <br>`));
 
-                var btn = $(`<button disabled class="button green_button" id="go" onclick="next_question(getActiveNumber());">Next!</button> <br>`);
+                var btn = $(`<button disabled class="button green_button" id="go" onclick="next_question(getActiveNumber());">Próximo!</button> <br>`);
                 $("#answers").append(btn);
 
                 createButton({
@@ -145,7 +147,7 @@
             } else if (current.questionType === "customText") {
                 $("#answers").append($(`<input type="text" id="text" class="text_input"> <br>`));
 
-                var btn = $(`<button disabled class="button green_button" id="go" onclick="next_question(getActiveText());">Next!</button> <br>`);
+                var btn = $(`<button disabled class="button green_button" id="go" onclick="next_question(getActiveText());">Próximo!</button> <br>`);
                 $("#answers").append(btn);
 
                 createButton({

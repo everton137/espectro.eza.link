@@ -2,118 +2,118 @@ questions = [
     //Valid questionTypes: customNumber, smallSelection, bigSelection, customText
     {
     "id": 1,
-    "question": "How would you classify yourself as?",
+    "question": "Como você se classificaria?",
     "questionType": "smallSelection",
     "answers":[
         {
-        "label": "Authoritarian Left",
+        "label": "Esquerda Autoritária",
         "color": "#990000",
         "effect": "AuthLeft"
         },
         {
-        "label": "Authoritarian Right",
+        "label": "Direita Autoritária",
         "color": "#003399",
         "effect": "AuthRight"
         },
         {
-        "label": "Centrist",
+        "label": "Centrista",
         "color": "#999999",
         "effect": "Centrist"
         },
         {
-        "label": "Libertarian Left",
+        "label": "Esquerda Libertária",
         "color": "#339900",
         "effect": "LibLeft"
         },
         {
-        "label": "Libertarian Right",
+        "label": "Direita Libertária",
         "color": "#999900",
         "effect": "LibRight"
         },
         {
-        "label": "Unaffiliated / Don't know",
+        "label": "Não filiada(o) / Não sei",
         "color": "#999999",
         "effect": null
         }]
     },
     {
     "id": 2,
-    "question": "How would you classify yourself as?",
+    "question": "Como você se classificaria?",
     "questionType": "smallSelection",
     "answers":[
         {
-        "label": "Authoritarian",
+        "label": "Autoritária(o)",
         "color": "#6d4cb0",
         "effect": "Auth"
         },
         {
-        "label": "Rightist",
+        "label": "De direita",
         "color": "#4c96af",
         "effect": "Right"
         },
         {
-        "label": "Centrist",
+        "label": "Ao centro",
         "color": "#999999",
         "effect": "Centrist"
         },
         {
-        "label": "Leftist",
+        "label": "De esquerda",
         "color": "#af4c4c",
         "effect": "Left"
         },
         {
-        "label": "Libertarian",
+        "label": "Libertária(o)",
         "color": "#4caf50",
         "effect": "Lib"
         },
         {
-        "label": "Unaffiliated / Don't know",
+        "label": "Não filiada(o) / Não sei",
         "color": "#999999",
         "effect": null
         }]
     },
     {
     "id": 3,
-    "question": "How do you view yourself on Culture?",
+    "question": "Como você se vê na cultura?",
     "questionType": "smallSelection",
     "answers":[
         {
-        "label": "Very Progressive",
+        "label": "Muito progressiva(o)",
         "color": "#1b5e20",
         "effect": 3
         },
         {
-        "label": "Progressive",
+        "label": "Progressiva(o)",
         "color": "#4caf50",
         "effect": 2
         },
         {
-        "label": "Leaning Progressive",
+        "label": "Inclinada(o) a progressiva(o)",
         "color": "#7ae67e",
         "effect": 1
         },
         {
-        "label": "Neutral",
+        "label": "Neutra(o)",
         "color": "#a9a9a9",
         "effect": 0
         },
         {
-        "label": "Leaning Conservative",
+        "label": "Inclinado a conservador(a)",
         "color": "#7acbe6",
         "effect": -1
         },
         {
-        "label": "Conservative",
+        "label": "Conservador(a)",
         "color": "#4c96af",
         "effect": -2
         },
         {
-        "label": "Very Conservative",
+        "label": "Muito conservador(a)",
         "color": "#1b4e5e",
         "effect": -3
         },
         {
-        "label": "Don't Know / Refuse",
+        "label": "Não Sabe / Recusar",
         "color": "#a9a9a9",
         "effect": null
         }]
