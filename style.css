@@ -2,6 +2,7 @@ html {
     background-color: #bbbbbb;
     padding: 0px;
 }
+
 body {
     width: 80%;
     min-height: calc(100vh - 4em);
@@ -13,6 +14,7 @@ body {
     border-right-style: solid;
     border-width: 20px;
 }
+
 p {
     color: #444444;
     font-family: 'Roboto', sans-serif;
@@ -20,16 +22,20 @@ p {
     line-height: 1;
     margin: 4pt;
 }
-a{
+
+a {
     color: #2222DD;
 }
-a:hover{
+
+a:hover {
     color: #22DDDD;
 }
+
 p.value-description {
     text-indent: -16pt;
     margin-left: 20pt;
 }
+
 p.question {
     margin: 16pt auto;
     color: #333333;
@@ -46,8 +52,8 @@ p.question {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
+
 h1 {
     color: #222222;
     font-family: 'Montserrat', sans-serif;
@@ -57,9 +63,11 @@ h1 {
     margin-top: 0pt;
     margin-bottom: 0pt;
 }
+
 #svgHeader {
-	display: none;
+    display: none;
 }
+
 h2 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
@@ -68,10 +76,12 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+
 li {
     font-size: 16pt;
     text-indent: 16pt;
 }
+
 a {
     font-family: inherit;
 }
@@ -133,6 +143,7 @@ img.center {
     width: 50%;
     min-width: 500pt;
 }
+
 .button {
     background-color: #2196f3;
     font-family: 'Montserrat', sans-serif;
@@ -149,10 +160,13 @@ img.center {
     margin: -2px auto;
     cursor: pointer;
 }
+
 .green_button {
     background-color: #4caf50;
 }
-.small_button, .small_button_off {
+
+.small_button,
+.small_button_off {
     background-color: #333;
     font-family: 'Montserrat', sans-serif;
     border: none;
@@ -168,6 +182,7 @@ img.center {
     margin: -2px auto;
     cursor: pointer;
 }
+
 .small_button_off {
     background-color: #ddd;
     color: #888;
@@ -175,6 +190,7 @@ img.center {
     cursor: not-allowed;
     margin: -4px auto;
 }
+
 .button:disabled {
     background-color: #ddd;
     font-family: 'Montserrat', sans-serif;
@@ -191,6 +207,7 @@ img.center {
     margin: -2px auto;
     cursor: not-allowed;
 }
+
 div.text-wrapper {
     font-family: 'Montserrat', sans-serif;
     font-size: 36pt;
@@ -198,9 +215,11 @@ div.text-wrapper {
     color: #222222;
     display: inline-block;
 }
+
 span.weight-300 {
     font-weight: 300;
 }
+
 #banner {
     border-color: #444444;
     border-style: solid;
@@ -211,56 +230,53 @@ span.weight-300 {
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
-	min-width: 500pt;
+    min-width: 500pt;
 }
 
 @media screen and (orientation:portrait) {
-	body {
-		width: auto !important;
-		border-width: 0px !important;  
-	}
-	
-	.title {
-		display: none;
-	}
-	
-    #svgHeader {
-		display: block !important;
+    body {
+        width: auto !important;
+        border-width: 0px !important;
     }
-
-	.svgHeader {
-		color: #222222;
-		font-family: 'Montserrat', sans-serif;
-		text-align: center;
-		margin-top: 0pt;
-		margin-bottom: 0pt;
-		font-weight: bold;
+    .title {
+        display: none;
+    }
+    #svgHeader {
+        display: block !important;
+    }
+    .svgHeader {
+        color: #222222;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        font-weight: bold;
         text-anchor: middle;
-	}
-	
-	#banner {
-		min-width: 0px;
-		max-width: 100%;
-		border-width: 1px;
-	}
-	
-	.button, .button:disabled, .text_input, .num_input, .selection {
-		min-width: 0px;
-		max-width: 100%;
-		width: 100%;
-		font-size: 1.5em;
-	}
-	
-	h2 {
-		font-size: 1.5em;
-		line-height: initial
-	}
-
+    }
+    #banner {
+        min-width: 0px;
+        max-width: 100%;
+        border-width: 1px;
+    }
+    .button,
+    .button:disabled,
+    .text_input,
+    .num_input,
+    .selection {
+        min-width: 0px;
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+        line-height: initial
+    }
     p.question {
         min-height: 224px !important;
         min-width: 0px;
-		max-width: 100%;
-		width: auto;
-		font-size: 1.75em;
+        max-width: 100%;
+        width: auto;
+        font-size: 1.75em;
     }
 }
