@@ -23,11 +23,11 @@
     <h2 style="text-align:center;" id="question-number">Tudo pronto!</h2>
     <p class="question" id="question-text">Você concluiu este teste de maneira séria (ou pelo menos não irônica)?</p>
     <div id="answers">
+        <button class="button" onclick="pass(false)">Não, apenas me leve aos resultados!</button> <br>
         <button class="button" id="serious_extra" onclick="init_question()" style="background-color: #1b5e20;">Sim, e eu
             gostaria de (anonimamente) ajudar na tarefa ideológica!</button> <br>
         <button class="button" id="serious" onclick="pass(true)" style="background-color: #4caf50;">Sim, mas me leve aos
             resultados!</button> <br>
-        <button class="button" onclick="pass(false)">Não, apenas me leve aos resultados!</button> <br>
         <button class="button" id="quiz" onclick="location.href='quiz.html';" style="background-color: #4caf50; display: none;">Faça o questionário!</button> <br>
     </div>
     <button class="small_button" onclick="prev_question()" id="back_button" style="display: none;">Voltar</button>

@@ -19,26 +19,28 @@
 
     <h2>O que é o Espectro Político?</h2>
     <p>O Espectro Político é uma tradução do
-        <a href="https://sapplyvalues.github.io/" ">SapplyValues</a>. Você pode encontrar o código e contribuir <a href=" https://github.com/everton137/espectropolitico ">aqui</a>.</p>
-    <!-- Main -->
-    <script type=" application/javascript " src=" questions.js "></script>
-    <script type=" text/javascript ">
-        document.getElementById(" numOfQuestions ").innerHTML = questions.length;
+        <a href="https://sapplyvalues.github.io/">SapplyValues</a>. Você pode encontrar o código e contribuir <a href=" https://github.com/everton137/espectropolitico ">aqui</a>.</p>
 
+    <p>Há <b><u><span id="numOfQuestions"></span></u></b> perguntas no teste.</p>
+    <!-- Main -->
+    <script type="application/javascript" src="questions.js "></script>
+    <script type="text/javascript ">
+        document.getElementById("numOfQuestions").innerHTML = questions.length;
         window.onload = function() {
-            var background = new Image();
+            var
+                background = new Image();
             background.onload = function() {
-                var c = document.createElement(" canvas ");
+                var c = document.createElement("canvas");
                 c.width = 1850;
                 c.height = 1300;
-                var ctx = c.getContext(" 2d ");
-                ctx.fillStyle = " #EEEEEE "
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#EEEEEE "
                 ctx.fillRect(0, 0, 1850, 1300);
                 ctx.drawImage(background, 0, 0);
 
-                document.getElementById(" banner ").src = c.toDataURL();
+                document.getElementById("banner").src = c.toDataURL();
             }
-            background.src = " ./compass.png ";
+            background.src = "./compass.png";
         }
     </script>
 </body>
